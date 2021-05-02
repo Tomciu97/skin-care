@@ -1,0 +1,167 @@
+/* MAIN OPTIONS: */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    overflow: hidden;
+}
+
+
+.home, .about, .goback , .info, .next, .info-contact {
+    display: flex;
+}
+
+
+.title, .title3, .links {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+
+.title {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+
+.title3 {
+    font-size: 24px;
+}
+
+/* HOME */
+.home {
+    background: url(/img/home.jpeg);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* ABOUT */
+.about {
+    background: url(/img/about.jpg);
+}
+
+
+/* CONTACT */
+.contact {
+    background: url(/img/contact.jpg);
+}
+
+
+/* MAIN SECTION OPTIONS */
+.home, .about, .contact {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    flex-direction: column;
+}
+
+
+.goback, .info, .next {
+    height: 33.3%;
+    width: 100%;
+}
+
+
+.goback {  
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info {
+    align-items: center;
+    text-align: center;
+}
+
+.info .title3 {
+    line-height: 1.7;
+}
+
+.info-contact {
+    height: 77%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-contact .title3 {
+    margin: 20px 0px;
+}
+
+.next {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* LINKS */
+.links {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.5s ease;
+}
+
+h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.links:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.home > .links {
+    margin-top: 10%;
+}
+
+
+.home > .links::after, .next > .links::before {
+    content: "";
+    position: relative;
+    top: 35px;
+    right: 50%;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+.next > .links::before {
+    left: 50%;
+}
+
+
+.goback > .links::before {
+    content: "";
+    position: relative;
+    top: -35px;
+    left: 50%;
+    border: solid white;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+
+.border {
+    padding: 15px;
+    border: solid white 1px;
+}
