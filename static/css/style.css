@@ -35,7 +35,7 @@ body {
 
 /* HOME */
 .home {
-    background: url(/img/home.jpeg);
+    background: url(../img/home.jpeg);
     justify-content: center;
     align-items: center;
     
@@ -43,13 +43,13 @@ body {
 
 /* ABOUT */
 .about {
-    background: url(/img/about.jpg);
+    background: url(../img/about.jpg);
 }
 
 
 /* CONTACT */
 .contact {
-    background: url(/img/contact.jpg);
+    background: url(../img/contact.jpg);
 }
 
 
